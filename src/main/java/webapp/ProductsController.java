@@ -9,7 +9,7 @@ import java.util.Arrays;
 @RestController
 public class ProductsController {
 
-    @GetMapping("products")
+    @GetMapping("/products")
     public ResponseEntity<ProductsResponse> retrieveProducts() {
         return ResponseEntity.ok(
             new ProductsResponse(
